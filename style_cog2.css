@@ -111,7 +111,7 @@ body {
       rgba(240, 240, 240, 0.144),
       rgba(255, 255, 255, 0.336)
     ),
-    url("https://www.insiderintelligence.com/static/5ecb856d09def78da57ec3fac2f6ce5c/7fa24/blockchain.jpg");
+    url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/464303942.jpg?k=24e506ebac37b9faee6d31c754f97af1b1362355fc4a28cf7bb4ec72624cfc5d&o=&hp=1");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +144,12 @@ body {
 }
 
 #about h2 {
-  font-size: 2.3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #444;
 }
 
 #about p {
@@ -207,7 +212,7 @@ body {
   font-weight: 400;
   margin-bottom: 40px;
   text-transform: uppercase;
-  color: #555;
+  color: #ffffff;
 }
 
 .food-container {
