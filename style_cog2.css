@@ -135,7 +135,7 @@ body {
 
 #about {
   padding: 50px 0;
-  background: #f5f5f7;
+  background: #fff8e5;
 }
 
 .about-wrapper {
@@ -155,6 +155,7 @@ body {
 #about p {
   font-size: 1.2rem;
   color: #555;
+  text-align:justify;
 }
 
 #about .small {
@@ -212,7 +213,7 @@ body {
   font-weight: 400;
   margin-bottom: 40px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #ff009b;
 }
 
 .food-container {
@@ -282,12 +283,16 @@ body {
 }
 
 /* .........../Food Menu/............ */
-
+#food-menu{
+	background-image:url("https://img.freepik.com/free-photo/blur-hotel-lobby_74190-5764.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
 .food-menu-heading {
   text-align: center;
   font-size: 3.4rem;
   font-weight: 400;
-  color: #666;
+  color: #000000;
 }
 
 .food-menu-container {
@@ -319,12 +324,12 @@ body {
 .font-title {
   font-size: 1.8rem;
   font-weight: 400;
-  color: #444;
+  color: #000;
 }
 
 .food-description p {
   font-size: 1.4rem;
-  color: #555;
+  color: #000;
   font-weight: 500;
 }
 
@@ -344,7 +349,7 @@ body {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 400;
-  color: #555;
+  color: #ff009b;
 }
 
 .testimonial-container {
@@ -360,7 +365,7 @@ body {
 
 .testimonial-box .testimonial-text {
   margin: 1rem 0;
-  color: #444;
+  color: #ff009b;
 }
 
 .testimonial-box {
