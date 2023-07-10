@@ -1,188 +1,251 @@
- <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Cognizant</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-</style>
-</head>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#idea" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IDEA</a>
-    <a href="#overview" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OVERVIEW</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#idea" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">IDEA</a>
-  <a href="#overview" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OVERVIEW</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  </div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center" style="background-color:black;">
-    <img src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:50%" height="600">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 class="glow">Team work makes dream work</h3>
-      <p class="glow"><b>Potential to serve and influence organizations & communities for the better</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center" style="background-color:black;">
-    <img src="https://images.unsplash.com/photo-1554474051-0256b98c36f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" style="width:70%" height="600">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 class="glow">Virtual reality</h3>
-      <p class="glow"><b>Reengineering the way data is collected, standardized, managed, analyzed, and reported</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center" style="background-color:black;">
-    <img src="https://images.pexels.com/photos/4353619/pexels-photo-4353619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:50%" height="600">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 class="glow">Work Culture</h3>
-      <p class="glow"><b>Using technology to address Diversity, Equity and Inclusion</b></p>    
-    </div>
-  </div>
-
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="idea">
-    <h2 class="w3-wide">THE IDEA</h2>
-    <p class="w3-opacity"><i>Book with Confidence, Earn with Ease: BlockInn, Where Rewards Meet Transparency</i></p>
-    <p class="w3-justify"><font size="4px">The proposed dApp frontend enables users to search, view availability, and book hotel rooms. Bookings are conducted through smart contracts stored on the blockchain, ensuring transparent and secure transactions. Smart contracts define booking terms such as stay dates, room quantity, price, and payment details. Upon completion of the stay, the smart contract is terminated, and users receive cryptocurrency rewards based on factors like stay duration or room quantity. The dApp backend manages smart contracts, rewards issuance, and transaction handling, leveraging the efficient and scalable proof-of-stake concept and AI/ML algorithms bolster security by detecting phishing attacks and fake transactions. The user responses would be used to analyze user behavior and offer personalized loyalty offerings.
-</font></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Ananya Sharma</p>
-        <img src="./IMG_20220212_190251-min.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockInn</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style_cog2.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Idea</a></li>
+              <li><a href="#food">Tech Stack</a></li>
+              <li><a href="#food-menu">Solution</a></li>
+              <li><a href="#testimonials">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <h1 class="logo">BlockInn</h1>
       </div>
-      <div class="w3-third">
-        <p>Shubham Jain</p>
-        <img src="./b.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+  </nav>
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container">
+        <h1 class="main-title" id="home">Hotel booking dApp</h1>
+        <p><b><font color="#000044">Book with confidence, earn with ease, BlockInn: where rewards meet transparency.</font></b></p>
       </div>
-      <div class="w3-third">
-        <p>Arpita Samal</p>
-        <img src="./a.png" class="w3-round" alt="Random Name" style="width:60%">
+    </section>
+
+    <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">The Idea</p>
+          <p>
+            The proposed dApp frontend enables users to<b> search, view availability, and book hotel rooms.</b> Bookings are conducted through <b>smart contracts stored on the blockchain</b>, ensuring transparent and secure transactions. Smart contracts define booking terms such as stay dates, room quantity, price, and payment details. Upon completion of the stay, the smart contract is terminated, and<b> users receive cryptocurrency rewards</b> based on factors like stay duration or room quantity. The dApp <b>backend manages smart contracts, rewards issuance, and transaction handling, leveraging the efficient and scalable proof-of-stake concept and AI/ML algorithms</b> bolster security by detecting phishing attacks and fake transactions. The user responses would be used to <b>analyze user behavior</b> and<b> offer personalized loyalty offerings.</b>
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="https://miro.medium.com/v2/resize:fit:678/0*fAmY2m8WL9fjHeZO.png" alt="blockchain" />
+        </div>
       </div>
-    </div>
-  </div>
-
-
-  <div class="w3-black" id="overview">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Digital Nurture Ideathon</h2>
-      <p class="w3-opacity w3-center"><i>BlockInn: Redefining Hotel Bookings through Blockchain Technology</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-black">
-        <li class="w3-padding" style="background-color:#fe76dd">Search </li>
-        <li class="w3-padding" style="background-color:#fe76dd">View Availability </li>
-        <li class="w3-padding" style="background-color:#fe76dd">Book Hotel Rooms </li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://sightbox.co/wp-content/uploads/2023/01/dapp-that-app.jpg" style="width:100%" class="w3-hover-opacity" height="200">
-          <div class="w3-container w3-white">
-            <p><b>BlockInn</b></p>
-            <p>It is a dApp that would be used for hotel bookings in the form of smart contracts managed by company's own blockchain network.</p>
+    </section>
+    <section id="food">
+      <h2>Proposed Tech Stack</h2>
+      <div class="food-container container">
+        <div class="food-type fruite">
+          <div class="img-container">
+            <img src="https://sightbox.co/wp-content/uploads/2023/01/dapp-that-app.jpg" alt="error" style="width:80%" height="250"/>
+            <div class="img-content">
+            <br>
+            <h3><font size="5px">BlockInn</font></h3>
+              <h5><font color="white">It is a dApp that would be used for hotel bookings in the form of smart contracts managed by company's own blockchain network.</font></h5>
+            </div>
           </div>
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/fab.png?itok=T43d2EwH" style="width:100%" class="w3-hover-opacity" height="200">
-          <div class="w3-container w3-white">
-            <p><b>Hyperledger Fabric induced with AI/ML</b></p>
-            <p>It helps in the formation of dApps with inbuilt features of fraud detection aided using AI algorithms.</p>
-            </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://images.shiksha.com/mediadata/shikshaOnline/mailers/2021/naukri-learning/dec/6dec/big-data-analytics.jpg" style="width:100%" class="w3-hover-opacity" height="200">
-          <div class="w3-container w3-white">
-            <p><b>Big Data Analysis and AR</b></p>
-            <p>Analyzing the customer trends and expectations to improve loyalty offerings. Use of AR to provide an immersive experience.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Gurgaon, India<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 9871253893<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        <div class="food-type vegetable">
+          <div class="img-container">
+            <img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/fab.png?itok=T43d2EwH" alt="error" style="width:80%" height="250"/>
+            <div class="img-content">
+            <br>
+              <h3><font size="5px">Hyperledger Fabric with AI</font></h3>
+              <h4><font color="white">It helps in the formation of dApps with inbuilt features of fraud detection aided using AI algorithms.</font></h4>
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
+        </div>
+        <div class="food-type grin">
+          <div class="img-container">
+            <img src="https://images.shiksha.com/mediadata/shikshaOnline/mailers/2021/naukri-learning/dec/6dec/big-data-analytics.jpg" alt="error" style="width:80%" height="250"/>
+            <div class="img-content">
+             <br>
+              <h3><font size="5px">Big Data Analysis and AR</font></h3>
+              <h4><font color="white">Analyzing the customer trends and expectations to improve loyalty offerings. Use of AR to provide an immersive experience.</font></h4>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
+    </section>
+    <section id="food-menu">
+      <h2 class="food-menu-heading">Solution</h2>
+      <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://blog.ipleaders.in/wp-content/uploads/2021/06/smart-contract-featured-image-1.png" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Task 1</h2>
+            <p>
+              BlockInn dApp creation using smart contracts and permissioned blockchain network. 
+            </p>
+          </div>
+        </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </footer>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img
+              src="https://wpswings.com/wp-content/uploads/2022/02/loyalty-reward-points-feature.png"
+              alt="error"
+            />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Task 2</h2>
+            <p>
+              Benefits with BlockInn including improved reward redemption and loyalty offerings.
+            </p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://i.ytimg.com/vi/M3EFi_POhps/maxresdefault.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Task 3</h2>
+            <p>
+              Security of dApp along with the use of proof of stake consensus for faster processing.
+            </p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6ZZzWNlSRIYvexXK9_71MDCcM45KBKWEUkFM3id88QW7wP-UOFmpHHJqa2GWp2mZVAA&usqp=CAU" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Task 4</h2>
+            <p>
+              Use of big data analysis along with AR for improving loyalty offerings and personalized recommendations.
+            </p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://www.dreamhost.com/blog/wp-content/uploads/2018/11/168dac8a-c0a5-4df6-834a-4432c5f44aa7_DreamHost20Loyalty20Club.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Task 5</h2>
+            <p>
+              Integrating loyalty programs with dApp and allowing users to track their loyalty points.
+            </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2 class="testimonial-title">Meet The Team</h2>
+      <div class="testimonial-container container">
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="./IMG_20220212_190251-min.jpg" alt="" />
+              <p class="customer-name">Ananya Sharma</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            Pursuing B.Tech in CSE with Data Science specialisation, she has great interest in...
+          </p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img
+                src="./b.png"
+                alt=""
+              />
+              <p class="customer-name">Shubham Jain</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            Pursuing B.Tech in CSE with Full Stack specialisation, he has great interest in AI and keen interest in exploring every field of technology
+          </p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="./a.png" alt="" />
+              <p class="customer-name">Arpita Samal</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            Pursuing B.Tech in CSE with Data Science specialisation, she has great interest in...
+            </p>
+         
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container container">
+        <div class="contact-img">
+          <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+        </div>
 
-<script>
-var myIndex = 0;
-carousel();
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="E-Mail" />
+          <textarea
+            cols="30"
+            rows="6"
+            placeholder="Type Your Message"
+          ></textarea>
+          <a href="#" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 7000);    
-}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+          // Store hash
+          var hash = this.hash;
 
-</body>
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+  </script>
 </html>
