@@ -111,7 +111,7 @@ body {
       rgba(240, 240, 240, 0.144),
       rgba(255, 255, 255, 0.336)
     ),
-    url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/464303942.jpg?k=24e506ebac37b9faee6d31c754f97af1b1362355fc4a28cf7bb4ec72624cfc5d&o=&hp=1");
+    url("https://blog.laval-virtual.com/wp-content/uploads/2021/04/vr-ar-realite-virtuelle-augmentee-business-technologies-immersives.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -362,7 +362,6 @@ body {
 .testimonial-box .checked {
   color: #ff9529;
 }
-
 .testimonial-box .testimonial-text {
   margin: 1rem 0;
   color: #ff009b;
